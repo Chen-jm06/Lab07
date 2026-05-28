@@ -51,19 +51,16 @@
             transform: translateY(-2px);
         }
 
-        .avatar {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, var(--accent-color), #ec4899);
-            color: white;
+        /* Updated photo styles */
+        .profile-photo {
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
-            font-weight: bold;
-            margin: 0 auto 1.5rem auto;
-            letter-spacing: 1px;
+            object-fit: cover;
+            border: 3px solid var(--accent-color);
+            margin: 0 auto 1.2rem auto;
+            display: block;
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
         }
 
         h1 {
@@ -76,8 +73,17 @@
         .subtitle {
             font-size: 1rem;
             color: var(--accent-color);
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
             font-weight: 500;
+        }
+
+        /* New Bio styling */
+        .bio {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: var(--text-color);
+            margin: 1rem 0;
+            padding: 0 0.5rem;
         }
 
         .divider {
@@ -116,10 +122,14 @@
 <body>
 
     <div class="container">
-        <div class="avatar">CJ</div>
+        <img src="mypicture.jpg" alt="Chen Jiaming" class="profile-photo">
         
         <h1>Chen Jiaming</h1>
-        <div class="subtitle">Student Profile</div>
+        <div class="subtitle">Software Engineering Student</div>
+        
+        <p class="bio">
+            A dedicated Software Engineering student at North China University for Nationalities, passionate about modern software architectures and building efficient web solutions.
+        </p>
         
         <div class="divider"></div>
         
@@ -135,7 +145,9 @@
         
         <div class="divider"></div>
         
-        
+        <footer>
+            &copy; 2026 Personal Webpage. All rights reserved.
+        </footer>
     </div>
 
 </body>
